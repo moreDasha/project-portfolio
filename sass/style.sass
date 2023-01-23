@@ -1,0 +1,362 @@
+@import "resets.scss"
+@import "normalizes.scss"
+*
+    box-sizing: border-box
+@font-face
+    font-family: "MontserratT"
+    src: url('../fonts/Montserrat-Medium.ttf')
+    font-weight: medium
+    font-style: normal
+@font-face
+    font-family: "MontserratT"
+    src: url('../fonts/Montserrat-Bold.ttf')
+    font-weight: bold
+    font-style: normal
+
+html
+    font-family: "MontserratT"
+    font-style: normal
+    scroll-behavior: smooth
+
+$color-blue: #51BAF5
+$color-orange: #F88351
+
+.main-section
+    min-height: 800px
+    background-color: #E6E6E6
+    padding-top: 28px
+    position: relative
+    overflow: hidden
+    &__nav-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        height: 71px
+        align-items: center
+    &__logo
+        width: 138px
+    &__content-container
+        display: flex
+        flex-direction: row
+        position: relative
+    &__first-elips
+        position: absolute
+        top: 90px
+        right: 40px
+    &__second-elips
+        position: absolute
+        bottom: -100px
+        right: 120px
+.container
+    max-width: 1140px
+    margin: 0 auto
+.burger-button
+    display: none
+.nav-menu
+    &__list
+        display: flex
+        flex-direction: row
+    &__item
+        margin-right: 71px
+        font-size: 18px
+        font-weight: bold
+        &:last-child
+            margin-right: 0px
+        a
+            text-decoration: none
+            color: black
+            &:hover
+                color: $color-orange
+                transition: all 0.3s ease-in-out
+.left-wrapper
+    padding-top: 133px
+    position: relative
+    img
+        position: relative
+        z-index: 5
+    &__rectangle-blue
+        width: 179.13px
+        height: 565.42px
+        background: $color-blue
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 89.5671px
+        transform: rotate(19deg)
+        position: absolute
+        top: 0px
+        left: 65px
+        z-index: 2
+    &__rectangle-orange
+        position: absolute
+        width: 179.13px
+        height: 585.58px
+        background: $color-orange
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 100px
+        transform: rotate(42deg)
+        top: 22px
+        left: 141px
+        z-index: 4
+    &__rectangle-grey
+        position: absolute
+        width: 179.13px
+        height: 585.58px
+        background: #888686
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 100px
+        transform: rotate(62.5deg)
+        top: 80px
+        left: 180px
+        z-index: 3
+.icons
+    display: flex
+    flex-direction: row
+    &__item
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 30px
+        height: 30px
+        border: 1px solid black
+        border-radius: 100px
+        margin-right: 30px
+        &:last-child
+            margin-right: 0px
+        &:hover
+            cursor: pointer
+            
+.right-wrapper
+    position: absolute
+    right: 80px
+    width: 379px
+    z-index: 2
+    padding-top: 101px
+    &__icons-box
+        display: inline-flex
+        margin-bottom: 10px
+        margin-left: 16px
+    &__text
+        font-size: 16px
+        text-align: right
+        margin-bottom: 31px
+    &__button
+        display: flex
+        height: 118px
+        width: 379px
+        justify-content: space-between
+        flex-direction: column
+        align-items: flex-end
+
+.title
+    font-size: 72px
+    font-weight: bold
+    position: relative
+    margin: 0px
+    margin-bottom: 8px
+    &__hr
+        position: absolute
+        width: 166px
+        border: none
+        border-top: 1px solid black
+        margin: 0px
+.buttons
+    &__main-btn
+        width: 186px
+        height: 46px
+        background-color: $color-orange
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 100px
+        border: none
+        font-size: 15px
+        color: #FFFFFF
+        &:hover
+            background-color: #FF9E74
+            transition: all 0.3s ease-in-out
+    &__icon-btn
+        display: inline-flex
+        align-items: flex-end
+        img
+            margin-right: 8px
+            &:hover
+                cursor: pointer
+    &__text
+        font-size: 13px
+
+.elips
+    width: 155px
+    height: 155px
+    background: linear-gradient(180deg, rgba(248, 131, 81, 0.5) 0%, rgba(81, 186, 245, 0.5) 49.48%, rgba(136, 134, 134, 0.5) 100%)
+    border-radius: 150px
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 1
+    &_big
+        width: 219px
+        height: 219px
+    &_little
+        width: 90px
+        height: 90px
+    &__subtract
+        width: 108px
+        height: 108px
+        background: #E6E6E6
+        border-radius: 150px
+        &_big
+            width: 152.59px
+            height: 152.59px
+        &_little
+            width: 62.71px
+            height: 62.71px
+        &_wt
+            background: #FFFFFF
+
+.second-section
+    min-height: 663px
+    padding-top: 43px
+    position: relative
+    &__title
+        margin-bottom: 43px
+    &__icons-award
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+    &__first-elips
+        position: absolute
+        top: 90px
+        right: 107px
+        z-index: -1
+    &__second-elips
+        position: absolute
+        top: 330px
+        left: 90px
+        z-index: -1
+
+.cards
+    display: flex
+    justify-content: space-between
+    margin-bottom: 43px
+    &__item
+        position: relative
+        display: flex
+        align-items: flex-end
+        width: 283px
+        height: 283px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 20px
+        &:hover
+            transition: all 0.3s ease-in-out
+            transform: scale(1.05)
+            cursor: pointer
+    &__name
+        position: absolute
+        top: 103px
+        right: -42px
+        width: 243px
+        font-size: 32px
+        font-weight: bold
+        transform: rotate(90deg)
+        text-align: center
+        &_ukulele
+            top: 127px
+.cards-item
+    &_orange
+        background: $color-orange
+    &_gray
+        background: #888686
+        padding-left: 33px
+    &_blue
+        background: $color-blue
+
+.icons-award__sign
+    display: inline-flex
+.sign__img
+    margin-right: 10px
+.sign__text-big
+    font-size: 32px
+    font-weight: bold
+.sign__text-little
+    font-size: 18px
+    
+.third-section
+    position: relative
+    overflow: hidden
+    min-height: 663px
+    background-color: #E6E6E6
+    &__content-container
+        min-height: 663px
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+    &__left-itle
+        z-index: 3
+    &__left-wrapper
+        display: flex
+    &__circle
+        position: absolute
+        width: 155px
+        top: 290px
+        left: 31px
+        z-index: 2
+    &__right-wrapper
+        width: 440px
+    &__right-title
+        margin-bottom: 43px
+    &__right-text
+        font-size: 16px
+        margin-bottom: 43px
+    &__right-title
+        text-align: right
+    &__button
+        height: 41px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+    &__first-elips
+        position: absolute
+        top: -76px
+        left: 373px
+    &__second-elips
+        position: absolute
+        top: 190px
+        left: 71px
+        z-index: 1
+    &__third-elips
+        position: absolute
+        top: 495px
+        right: 850px
+    &__forth-elips
+        position: absolute
+        top: 610px
+        right: 50px
+
+.title__hr_top
+    bottom: 80px
+
+.title__hr_right
+    bottom: 80px
+    right: 0px
+
+.footer
+    position: relative
+    &__content-container
+        min-height: 288px
+        display: flex
+        align-items: center
+        justify-content: flex-end
+    &__img
+        position: absolute
+        left: 0px
+        bottom: 0px
+    &__wrapper
+        text-align: center
+        min-width: 557px
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__title
+        margin-bottom: 20px
+        font-size: 72px
+
+@import "tablet.sass"
+@import "mobile.sass"
